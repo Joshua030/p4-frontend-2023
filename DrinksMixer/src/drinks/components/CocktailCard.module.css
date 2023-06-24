@@ -1,0 +1,67 @@
+.cardContainer {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.cardContainer:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.titleContainer {
+  padding: 2px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  gap: 1rem;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.imgContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease-in;
+}
+
+.imgContainer img:hover {
+  transform: scale(1.1);
+  filter: grayscale(70%);
+}
+
+.titleContainer:hover .brandyIcon {
+  opacity: 1;
+  transform: translateX(3rem);
+}
+
+.titleContainer:hover .MartiniIcon {
+  opacity: 0;
+  transform: translateX(-2rem) rotate(45deg);
+}
+
+.titleContainer a{
+  text-decoration: none;
+  color: #444;
+  font-size: 1.6rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.titleContainer a:hover{
+  font-weight: 600;
+}
+.brandyIcon {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.MartiniIcon{
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}

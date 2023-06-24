@@ -1,18 +1,16 @@
+import { DataGrid } from "../components/DataGrid";
 
-
-import { DataGrid } from "../components/DataGrid"
-
- enum Category {
+enum Category {
   Alcoholic = "Alcoholic",
   Non_Alcoholic = "Non_Alcoholic",
 }
 
-
 export const Cocktails = () => {
   return (
-    <div>
-
-    <DataGrid category={Category.Alcoholic}/>
+    <div className="mainContainer">
+      <div className="innerMainContainer">
+        <DataGrid category={Category.Alcoholic} />
+      </div>
     </div>
-  )
-}
+  );
+};

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { DrinksResponse, getData } from "../helpers/getData";
+import { Drink, getData } from "../helpers/getData";
 import { Category } from "../../Types";
 
 
 export const useFetchData = (category:Category) => {
-    const [data, setData] = useState ([]);
+    const [data, setData] = useState<Drink[]> ();
     const [isLoading, setIsLoading] = useState(true)
 
     const getnewData = async () => {

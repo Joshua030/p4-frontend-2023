@@ -9,10 +9,18 @@ const initialState = {
   user:""
 }
 
+const init = ()=> {
+  const user = JSON.parse(localStorage.getItem('user') || 'null');
+  return {
+    user: user || undefined,
+    logged: !!user,
+  };
+};
+
 
 export const AuthProvider = ({ children} : AuthProviderProps) => {
 
- const [authState,dispatch] = useReducer(authReducer, initialState);
+ const [authState,dispatch] = useReducer(authReducer, initialState,init);
  
  const login = (name:string)=>{
   const user= name;

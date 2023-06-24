@@ -1,5 +1,7 @@
 import { Category } from "../../../Types";
 import { useFetchData } from "../../hooks/useFetchData";
+import { CocktailCard } from "./CocktailCard";
+import styles from "./DataGrid.module.css";
 
 interface Props {
   category: Category;
@@ -10,8 +12,8 @@ interface Props {
 export const DataGrid: React.FC<Props> = ({ category }) => {
   const { data, isLoading } = useFetchData(category);
 
-  return <div>
-      {data.map((cocktail) => (
+  return <div className={styles.gridContainer}>
+      {data?.map((cocktail) => (
         <CocktailCard key={cocktail.idDrink} 
         {...cocktail} 
         />
