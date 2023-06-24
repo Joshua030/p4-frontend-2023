@@ -4,7 +4,7 @@ import { Category } from "../../Types";
 
 
 export const useFetchData = (category:Category) => {
-    const [data, setData] = useState<Drink[]> ();
+    const [data, setData] = useState<Drink[]>();
     const [isLoading, setIsLoading] = useState(true)
 
     const getnewData = async () => {

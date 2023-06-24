@@ -12,7 +12,7 @@ export const CocktailCard = ({ strDrink, strDrinkThumb, idDrink }: Drink) => {
       <div className={styles.titleContainer}>
       <Brandy size={24} color="#e993f5" className={styles.brandyIcon} />
       <Martini size={24} color="#e993f5" className={styles.MartiniIcon}/>
-        <Link to={`/cocktail/:${idDrink}`}>{strDrink}</Link>
+        <Link to={`/cocktail/${idDrink}`}>{strDrink}</Link>
       </div>
     </div>
   );
