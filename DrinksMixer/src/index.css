@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,10 @@ html {
   overflow-x: hidden;
   /* Does not worl on Safari */
   /* scroll-behavior: smooth; */
+}
+
+:root {
+  --input-gray: #f1ebeb;
 }
 
 body {

@@ -18,3 +18,8 @@ interface AuthContextValue {
   login: (name: string) => void;
   logout: () => void;
 }
+
+export enum Category {
+  Alcoholic = "Alcoholic",
+  Non_Alcoholic = "Non_Alcoholic",
+}

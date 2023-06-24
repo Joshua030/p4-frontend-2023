@@ -1,0 +1,95 @@
+
+.mainContainer{
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.backGroundContainer{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  background-image: url("coctelMain.jpg");
+  background-size: cover;
+}
+.mainContainer.blur .backGroundContainer{
+  filter: blur(5px);
+}
+
+.innerContainer{
+  justify-content: center;
+  position: absolute;
+}
+
+
+.formContainer {
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.formField {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--input-gray);
+  outline: 0;
+  font-size: 3rem;
+  color: #fff;
+  padding: 15px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .formLabel {
+    font-size: 5rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.formField:hover, .formLabel:hover {
+ cursor: pointer;
+}
+
+.formField:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #e993f5, #fff);
+  border-image-slice: 1;
+}
+
+.formField:focus ~ .formLabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 3rem;
+  color: #e993f5;
+  font-weight: 700;
+}
+
+.formField:required, .formField:invalid {
+  box-shadow: none;
+}
+
+
+.formLabel {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color:var(--input-gray);
+  z-index: -2;
+}
