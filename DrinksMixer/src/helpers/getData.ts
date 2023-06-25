@@ -5,6 +5,8 @@ export interface Drink {
     strDrinkThumb: string;
     idDrink: string;
     strImageSource?:string;
+    strInstructions?:string;
+    [key: string]: string | undefined;
   }
   
   export interface DrinksResponse {
