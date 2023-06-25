@@ -1,0 +1,19 @@
+.userContainer{
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.userContainer h2{
+  font-size: 4rem;
+  color: #fff;
+}
+
+.mainContainer{
+  margin-bottom: 3rem;
+ padding: 0 4rem;
+  background-image: linear-gradient(to right,  #ec6868, rgb(223, 163, 51));
+}
