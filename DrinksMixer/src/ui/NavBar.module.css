@@ -12,8 +12,25 @@
   color: #fff;
 }
 
+.userContainer h2 span{
+  color: #000;
+ text-transform: capitalize;
+}
+
+
 .mainContainer{
   margin-bottom: 3rem;
  padding: 0 4rem;
   background-image: linear-gradient(to right,  #ec6868, rgb(223, 163, 51));
+}
+
+.logoutButton{
+  background-color: transparent;
+  border: none;
+  color: #225e07;
+}
+
+.logoutButton:hover{
+  cursor: pointer;
+  color: red;
 }

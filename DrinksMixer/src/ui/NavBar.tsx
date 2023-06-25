@@ -18,10 +18,14 @@ export const NavBar = () => {
     <div className={`mainContainer ${styles.mainContainer}`}>
       <div className="innerMainContainer">
         <div className={styles.userContainer}>
-          <h2>{user} enjoys the adventure of cocktail creation</h2>
-          <button className={styles.logoutButton}>
-            <Power size={50} />
-          </button>
+          <h2>
+            <span>{user}</span> enjoys the adventure of cocktail creation
+          </h2>
+          <div className={styles.buttonContainer}>
+            <button onClick={onLogout} className={styles.logoutButton}>
+              <Power size={50} />
+            </button>
+          </div>
         </div>
       </div>
     </div>
